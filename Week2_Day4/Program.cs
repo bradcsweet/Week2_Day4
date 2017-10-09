@@ -14,7 +14,14 @@ namespace Week2_Day4
 
             mittens.Name = "Mittens";
 
-            Console.WriteLine(mittens);
+            Cat secondCat = new Cat("Oz", 3, "orange and white");
+
+            Console.WriteLine(mittens.Name);
+            Console.WriteLine(secondCat.Name);
+
+            mittens.Eat();
+            mittens.WorkOut();
+
         }
     }
 }

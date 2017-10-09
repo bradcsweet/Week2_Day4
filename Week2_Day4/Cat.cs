@@ -32,8 +32,37 @@ namespace Week2_Day4
 
         public Cat()
         {
-            //default construction because it takes no 
+            //default constructor because it takes no 
             //parameters in the parentheses
+        }
+
+        public Cat(string name, int age, string furColor) //overloading a constructor. assigning values right away.
+        {
+            this.name = name;
+            this.age = age;                 //Constructor is a type of method!
+            this.furColor = furColor;
+            //field         parameter
+        }
+
+        //Methods
+
+        public void Eat()
+        {
+            if(isHungry) // same as if(isHungry == true)
+            {
+                isHungry = false;
+            }
+            Console.WriteLine("Is the cat hungry? " + isHungry);
+
+        }
+
+        public void WorkOut()
+        {
+            if (isHungry == false)
+            {
+                isHungry = true;
+            }
+            Console.WriteLine("The cat worked out. Hungry now? " + isHungry);
         }
 
     }
